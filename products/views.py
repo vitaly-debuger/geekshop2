@@ -13,7 +13,6 @@ def index(request):
 
 
 def products(request):
-    file_path = settings.BASE_DIR / 'products/fixtures/goods.json'
     context = {
         'title': 'GeekShop - Каталог',
         'products': Product.objects.all(),
